@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/0a139b4f8b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- header>div>nav>ul>li*5 -->
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <!-- <img src="" alt="logo"> -->
+                    <h1>MySit3</h1>
+                </a>                
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="derecha">
+                    <nav class="navegacion navegacion-start navegacion-principal" id="menu">
+                        <ul class="menu-horizontal">
+                            <li><a href="/">Inicio                                            </a></li>
+                            <li><a href="#Proyectos">Proyects<span class="icon-down-open"></span></a>
+                                <ul class="menu-vertical">
+                                    <li><a class="
+                                        " href="Proyecto1.html">proyecto1                                          </a></li>
+                                    <li><a class="opciones" href="Proyecto2.html">proyecto2                                          </a></li>
+                                    <li><a class="opciones" href="Proyecto3.html">proyecto3                                          </a></li>
+                                    <li><a class="opciones" href="Proyecto4.html">proyecto4 
+                                <!-- li*2>a[href="Linea$.html"]{linea$} -->                                         </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Skills">skills                                                            </a></li>
+                            <li><a href="#Experience">Experience                                                    </a></li>
+                            <li><a href="#Blog">Blog                                                                </a></li>
+                            <li><a href="#Contact">Contact                                                          </a></li>
+                            <!-- <li><a href="Login.html#login">Iniciar sesion                                      </a></li> -->
+                        </ul>
+                    </nav>
+                </div> 
+            </div>  
+        </div>
+    </header>
+    <!-- Imagen del header -->
+    <div id="particles-js" class="marconew"></div>
+    <section class="cont-info">
+        <div class="ajuste">
+           <div class="marco">
+                <div class="imagen">
+                    <img src="build/img/perfil.jpg" alt="perfil">
+                </div>
+            </div>
+            <div class="informacion">
+                <h2>David Mendieta Morales</h2>
+                <p class="carrera">Ingeniero en computación</p>
+                <p class="contenido">Ingeniero en computación, busco empezar mi carrera aportando sólidos conocimientos de programación (C, C#, PHP, HTML5) y bases de datos.
+                    Mi creatividad y perseverancia son mis principales herramientas para superarme y lograr cualquier objetivo.</p>            
+            </div>
+            <ul class="redes-sociales">
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+        <!-- <p>habilidades</p> -->
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+
+        <div class="galeria">
+
+            <div class="proyecto-marco">
+                <p>Proyecto1</p>
+                <div class="proyectos">
+                    <a href="#">
+                        <img src="build/img/Proyecto5.jpg" alt="Proyecto1">
+                    </a>
+                </div>
+            </div>
+
+            <div class="proyecto-marco">
+                <p>Proyecto2</p>
+                <div class="proyectos">
+                    <a href="#">
+                        <img src="build/img/Proyecto6.jpg" alt="Proyecto2">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="proyecto-marco">
+                <p>Proyecto3</p>
+                <div class="proyectos">
+                    <a href="#">
+                        <img src="build/img/Proyecto7.jpg" alt="Proyecto3">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#">
+            <h2 class="mas-proyectos">Ver mas</h2>
+        </a>
+
+    </section>
+
+    <section id="habilidades">
+        <h2>habilidades</h2>
+            <picture class="marco-adorno">
+                <!-- <source srcset="adorno.avif" type="image/avif">
+                <source srcset="adorno.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/adorno.png" alt="adorno"> -->
+                <img class="adorno" src="build/img/adorno.png" alt="adorno">
+            </picture>
+            <div class="contenedor-habilidades">
+                <div class="responsabilidad">       <p>Responsavilidad</p>      </div>
+                <div class="capacidad-de-analisis"> <p>Capacidad de analisis</p></div>
+                <div class=" proactivo">            <p>Proactivo</p>            </div>
+                <div class="facil-adaptacion">      <p> Facil adaptación</p>    </div>
+            </div>                            
+    </section>
+
+    
+    <section id="conocimientos">
+        <div class="fondo-conocimientos">
+            <img src="build/img/Fondo.png" alt="">
+        </div>
+        <h2>conocimientos</h2>
+        <div class="contenedor-skills">
+            <div class="skill posicion1"></div>
+            <div class="skill posicion2"></div>
+            <div class="skill posicion3"></div>
+            <div class="skill posicion4"></div>
+            <div class="skill posicion5"></div>
+            <div class="skill posicion6"></div>
+
+        </div>
+
+    </section>
+
+    
+    <!-- <section id="formacion">
+        <h2>formacion</h2>
+    </section>
+
+    
+    <section id="experiencia">
+        <h2>experiencia laboral</h2>
+    </section> -->
+
+    <footer class="footer seccion">
+        <!-- <p>hola soy el footer</p>
+        <div class="barra">
+            <nav class="navegacion" id="menu">
+                <ul class="menu-horizontal">
+                    <li><a href="/">Inicio                                            </a></li>
+                    <li><a href="#Proyectos">Proyects<span class="icon-down-open"></span></a>
+                    <li><a href="#Skills">skills                                                            </a></li>
+                    <li><a href="#Experience">Experience                                                    </a></li>
+                    <li><a href="#Blog">Blog                                                                </a></li>
+                    <li><a href="#Contact">Contact                                                          </a></li>
+                </ul>
+            </nav>
+        </div>  -->
+
+        <div class="contenedor contenedor-footer">
+            <div class="barra">
+                <nav class="navegacion" id="menu">
+                    <ul class="menu-horizontal">
+                        <li><a href="/">Inicio                                            </a></li>
+                        <li><a href="#Proyectos">Proyects<span class="icon-down-open"></span></a>
+                        <li><a href="#Skills">skills                                                            </a></li>
+                        <li><a href="#Experience">Experience                                                    </a></li>
+                        <li><a href="#Blog">Blog                                                                </a></li>
+                        <li><a href="#Contact">Contact                                                          </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos rervados 2021&copy;</p>
+    </footer>
+
+    <script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+    <script src="js/alt.js"></script>
+</body>
+</html>

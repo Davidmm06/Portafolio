@@ -1,0 +1,1 @@
+{"version":3,"sources":["alt.js"],"names":["$","document","ready","css","height","window"],"mappings":"AAAAA,EAAEC,UAAUC,OAAM,WACjBF,EAAE,iBAAiBG,IAAI,CAACC,OAASJ,EAAEK,QAAQD,SAAS","file":"alt.js","sourcesContent":["$(document).ready(function(){\n\t$('#particles-js').css({\"height\":$(window).height()+\"px\"});\n});"]}
