@@ -1,5 +1,4 @@
 node_modules
 package-lock.json
-src/img
-src/scss
+src
 .vscode

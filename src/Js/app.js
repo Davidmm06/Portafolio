@@ -14,18 +14,24 @@ function navegacionFija() {
   const sobreFestival = document.querySelector('.about');
   const body = document.querySelector('body');
 
-
   window.addEventListener('scroll', function() {
-      if( sobreFestival.getBoundingClientRect().top <= 0  ) {
+      if( sobreFestival.getBoundingClientRect().top <= 90) {
+        barra.classList.remove('animate__faster');
+          barra.classList.remove('anim_slideOutUp');
+          barra.classList.add('anim_slideInDown');
+
           barra.classList.add('fijo');
-          // barra.classList.remove('anim_slideOutUp');
-          // barra.classList.add('anim_slideInDown');
           body.classList.add('body-scroll');
-      } else {
-          barra.classList.remove('fijo');
-          // barra.classList.remove('anim_slideInDown');
-          // barra.classList.add('anim_slideOutUp');
-          body.classList.remove('body-scroll');
+      } else if(sobreFestival.getBoundingClientRect().top >= 90 && sobreFestival.getBoundingClientRect().top <= 650){ 
+        barra.classList.remove('anim_slideInDown');
+        barra.classList.add('anim_slideOutUp');   
+        barra.classList.add('animate__faster');     
+      }else {
+        barra.classList.remove('animate__faster');
+        barra.classList.remove('anim_slideOutUp');
+
+        barra.classList.remove('fijo');
+        body.classList.remove('body-scroll');
       }
   });
 }
