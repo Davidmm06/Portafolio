@@ -1,0 +1,57 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &>h2{
+        @include m.seccion(4.3rem);
+        margin-bottom: 0;
+    }
+    .marco-adorno{
+        opacity:0.3;
+        height: 10rem;
+        margin-top: -4rem;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 10rem;
+        }        
+    }
+    .contenedor-habilidades{
+        height: 15rem;
+        display: flex;
+        gap: 0;
+        grid-template-columns: repeat(4, 1fr);
+        // justify-content: center;
+        // text-align: center;
+        // align-items: center;
+        margin: auto;
+        max-width: 100%;
+        background-color: rgba(4, 24, 39, 0.651);
+
+        .responsabilidad{
+            @include m.ajustar-tamaño;
+            background-color: rgba(193, 78, 52, 0.775);
+        }
+
+        .capacidad-de-analisis{
+            @include m.ajustar-tamaño;
+            background-color: rgba(87, 76, 95, 0.775);
+        }
+
+        .proactivo{
+            @include m.ajustar-tamaño;
+            background-color: rgba(105, 91, 116, 0.775);
+        }
+
+        .facil-adaptacion{
+            @include m.ajustar-tamaño;
+            background-color: rgba(115, 99, 127, 0.775);
+        }
+
+
+
+    }
+}

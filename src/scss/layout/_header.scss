@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(24,24,24,0.97) 34%);
+    // background-color: #181818;
+    // backdrop-filter: blur(5px);
+    // // border: 1px solid rgba(255, 255, 255, 0.3);
+    // box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    @include m.tablet{
+        &.fijo{
+            left: 0;
+            top: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+
+            // background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            // border-radius: 0 0 2rem 2rem;
+
+            // animation: slideInDown .15s linear both;
+            .dragon{
+                animation: spin 700ms ease-in-out;
+            }
+            .capa-oculta{
+                animation: fadeInLeft 0.90s ease;
+                opacity: 1;
+                visibility: visible;
+            }
+
+        }
+    }
+
+    h1{
+        color: v.$blanco;
+        // font-family: 'Lobster';       
+        // font-family: 'Cafenero',Helvetica,Arial,Lucida,sans-serif;
+        font-family: v.$fuente_alterna;
+         // text-align: start;
+        // font-size: 2.4rem;
+        margin-top: 0;
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+}
+

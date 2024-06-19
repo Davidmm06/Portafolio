@@ -1,0 +1,182 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: v.$fuente_principal;
+    font-size: 1.6 rem;
+    line-height: 1.8; //opcional
+    min-width: v.$telefono;
+    background-color: #1d1d1d;
+    // overflow: hidden;
+    ;
+
+    &.body-scroll{
+        padding-top: 11.5rem;
+    }
+}
+p{
+    font-size: 2rem;
+    color: v.$blanco;
+    line-height: 1.5;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+}
+a {
+    color: v.$blanco;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+a:hover{
+    color: #d21211;
+}
+h1, h2, h3 {
+    font-family: v.$fuente_principal;
+    // margin: $separacion / 2 0;
+    // margin:0 0 5rem 0;
+    font-weight: 300;
+    text-align: center;    
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    // font-family: font-file-82132;
+    font-family: v.$fuente_alterna;
+    font-weight: 400;
+    font-size: 3.8rem;
+    // font-size: 10.3rem;
+    // line-height: 8.7rem;
+    position: relative
+}
+h2 {
+    color: v.$blanco;
+    font-weight:400;
+    font-size: 3.4rem;
+    left: -10px;
+    font-size: 7.3rem;
+    line-height: 6.7rem
+}
+
+h2 .anim,
+h1 .anim {
+    font-size: 8.3rem;
+    font-family: v.$fuente_titulo;
+    letter-spacing: -10px;
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out
+}
+h1 .anim:hover,
+h2 .anim:hover {
+    // color: #d21211;
+    transition: all .1s;
+    // animation: rubberBand 1s linear both;
+}
+
+h2 .anim:hover {
+    text-shadow: 0.1px 0.1px 0.1px white, 0 0 2em white, 0 0 0.5em white;
+    //     // animation: rubberBand 1s linear both;
+}
+
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+.neon{
+    @include m.seccion(4.3rem);
+}
+
+img{
+    max-width: 100%;
+    // width: 100%;
+    height: auto;
+    display: block;
+    object-fit: fill;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.red-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-top: 3rem;
+    display: block;
+    color: #d21211;
+    font-size: 2.8rem; 
+}
+
+.section-home {
+    height: 100vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-full {
+    min-height: 100vh;
+    padding: 9rem 3rem;
+    position: relative;
+    // opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s
+}
+
+.text-zone{
+    h1, h2{
+        text-align: start;
+        line-height: 7rem;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    h2{
+        font-size: 5rem;
+    }
+    .final-leter{
+        padding-right: 2.5rem;
+    }
+}
+
+.section-full .text-zone {
+    padding-left: 3rem
+}
+
+.anim_rubberBand {
+    animation: rubberBand 0.5s linear both;
+}
+
+.anim_slideInDown {
+    animation: slideInDown 0.2s linear both;
+}
+
+.anim_slideOutUp {
+    animation: slideOutUp 0.2s linear both;
+
+}
+
