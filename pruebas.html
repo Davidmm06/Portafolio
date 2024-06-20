@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scrollbar Personalizado</title>
+    <style>
+        .scroller {
+            width: 300px;
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            scrollbar-color: rgb(255, 255, 255) rgba(255, 255, 255, 0);
+            scrollbar-width: auto;
+        }
+
+        /* Estilos de scrollbar para navegadores basados en WebKit */
+        .scroller::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        .scroller::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0);
+        }
+
+        .scroller::-webkit-scrollbar-thumb {
+            background-color: rgb(255, 255, 255);
+            border-radius: 6px;
+            border: 3px solid rgba(255, 255, 255, 0);
+        }
+
+        /* Cambios al hacer hover */
+        .scroller:hover {
+            /* Otros estilos si los necesitas */
+        }
+
+        .scroller:hover::-webkit-scrollbar-thumb {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .scroller:hover::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bPRBphnmPjA?autoplay=1&loop=1&controls=0"
-     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-      encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    <div class="scroller">
+        <!-- Contenido del div que tiene scrollbar -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ligula nec massa malesuada, non bibendum purus convallis. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ligula nec massa malesuada, non bibendum purus convallis. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ligula nec massa malesuada, non bibendum purus convallis. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ligula nec massa malesuada, non bibendum purus convallis.
+    </div>
 </body>
 </html>

@@ -1,0 +1,65 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+#Proyectos{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    &>h2{
+        @include m.seccion(4.3rem);
+    }
+
+    .galeria{
+        width: 90rem;
+        max-width: 100%;
+        // background-color: rgba(93, 122, 189, 0.5);
+        @include m.tablet{
+            @include m.grid(3,3rem);
+            // display: flex;
+            // justify-content: center;
+            // width: 90%;
+            margin: auto;
+        }
+
+        }
+
+        .proyecto-marco{
+            p{
+                text-align: center;
+                font-weight: v.$bold;
+            }
+        }
+        
+        .proyectos{    
+            max-width: 100%;
+            overflow:hidden;
+            // @include m.tablet{
+            //     height: 18rem;
+            // }        
+            img{
+                -webkit-transition:all .9s ease; /* Safari y Chrome */
+                -moz-transition:all .9s ease; /* Firefox */
+                -o-transition:all .9s ease; /* IE 9 */
+                -ms-transition:all .9s ease; /* Opera */
+                transition: all .9s ease;
+                width: 100%;
+            }    
+
+            &:hover img {
+                -webkit-transform:scale(1.5);
+                -moz-transform:scale(1.5);
+                -ms-transform:scale(1.5);
+                -o-transform:scale(1.5);
+                transform:scale(1.5);
+                }
+        }                
+
+
+        .mas-proyectos{
+
+                // @include m.seccion(1.4rem)
+                font-family: 'cafenero';
+                font-size: 1.4rem;
+
+        }
+}

@@ -1,0 +1,75 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+#conocimientos{
+
+    &>h2{
+        @include m.seccion(4.3rem);
+        color: v.$blanco;
+        text-shadow: 0.1px 0.1px 0.1px white, 0 0 2em white, 0 0 0.5em white;
+
+    }
+
+    .fondo-conocimientos{
+        width: 100%;
+        height: 52rem;
+        overflow: hidden;
+        position: absolute;       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        // background: url(../img/Fondo.png) no-repeat center center;
+        // background-size: cover; 
+        img{
+            padding-top: 10rem;
+            filter: blur(0.5px);
+            // opacity: 0.5;  
+            // position: relative;
+            // top: -10rem;
+
+        }
+    }
+
+    .contenedor-skills{
+        height: 40rem;
+        width: 100%;       
+        display: block;
+        position: relative;
+        // background-color: rgba(0,0,0,.5);
+        
+        .skill{
+            width: 10rem;
+            height: 10rem;
+            // background: url(../img/circle2.jpg);
+            // background-size: cover;        
+            background-color: black;
+            position: absolute;
+        }
+        .posicion1{
+            background-color: red;
+            left: 20%;
+        }
+        .posicion2{
+            background-color: blue;
+            // top: 20rem;
+            left: 70%;
+        }
+        .posicion3{
+            top: 15rem;
+            left: 10%;
+        }
+        .posicion4{
+            top: 15rem;
+            left: 80%;
+        }
+        .posicion5{
+            top: 30rem;
+            left: 20%;
+        }
+        .posicion6{
+            top: 30rem;
+            left: 70%;
+        }
+    }
+}

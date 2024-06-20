@@ -176,7 +176,7 @@
                 <div class="contenedor-proyectos">
                     <a href="#">
                         <img src="build/img/Proyecto5.jpg" alt="Proyecto1">
-                        <div class="capa color-blanco">
+                        <div class="capa color-blanco scroller">
                             <h3>Proyecto 1</h3>
                             <p>Lorem ipsum dolor sit amet consectetur,
                                  adipisicing elit. Similique, quos ex a
@@ -190,18 +190,18 @@
 
             <!-- <div class="proyecto-marco"> -->
                 <!-- <p>Proyecto2</p> -->
-                <div class="contenedor-proyectos">
+                <div class="contenedor-proyectos" id="contenedor">
                     <a href="#">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bPRBphnmPjA?autoplay=1&mute=1&loop=1&controls=0"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write;
-                         encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                         <div class="capa color-negro">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bPRBphnmPjA?autoplay=1&mute=1&loop=1&controls=0&playlist=bPRBphnmPjA"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                         <div class="capa color-negro scroller" style="overflow: auto;" id="scroller">
                             <h3>Convertidor de moneda y temperatura</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur,
-                                 adipisicing elit. Similique, quos ex a
-                                 b dolorem ut fugiat dolor velit nihil i
-                                 ure totam hic saepe, dignissimos debitis, as
-                                 periores nobis omnis? Laborum, ipsam</p>
+                            <p style="margin-left: 1rem;">
+                                Proyecto realizado por un reto de oracle One y alura latam:
+                                se trataba de realizar un convertidor de moneda usando
+                                ventanas en java y aplicado a diferentes tipos de monedas
+                                entre ellas dolar, yen, libras y el peso mexicano
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -209,17 +209,26 @@
     
             <!-- <div class="proyecto-marco"> -->
                 <!-- <p>Proyecto3</p> -->
-                <div class="contenedor-proyectos">
+                <div class="contenedor-proyectos" id="contenedor">
                     <a href="#">
-
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/50l9WaDJ5L4?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <div class="capa color-negro">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/50l9WaDJ5L4?autoplay=1&mute=1&loop=1&controls=0&playlist=50l9WaDJ5L4" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/50l9WaDJ5L4?autoplay=1&mute=1&loop=1&controls=0" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        <div class="capa color-negro scroller" style="overflow: auto;" id="scroller">
                             <h3>Hotel alura</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur,
-                                 adipisicing elit. Similique, quos ex a
-                                 b dolorem ut fugiat dolor velit nihil i
-                                 ure totam hic saepe, dignissimos debitis, as
-                                 periores nobis omnis? Laborum, ipsam</p>
+                            <p style="margin-left: 1rem; overflow: auto;">
+                                Proyecto realizado por un reto de oracle One y alura latam:
+                                Consistia en intentar replicar mediante unas instrucciones
+                                una aplicacion aplicacion para el control administrativo de
+                                un hotel proporcionaron la plantilla de la interfaz a la cual 
+                                se le tendria que agregar la base de datos y y las funciones 
+                                de backend entre ellas iniciar sesion, registrar huesped, realizar 
+                                consultas a la base de datos desde la aplicacion actualizar y 
+                                eliminar la base de datos asi como buscar un huesped por los 
+                                campos de registro
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -246,15 +255,15 @@
 
         <div class="blog-articles">
             <article class="post-article" style="border-top-color:#E4EE89">
-              <div class="post-content"> <time class="post-date" style="color:#E4EE89;"> SQL &amp; Databases</time>
+              <div class="post-content"> <time class="post-date" style="color:#E4EE89;"> Inteligencia artificial</time>  
                 <div class="blog-post-title">
-                  <h5> <a data-id="2500" href="https://jacekjeznach.com/database-queries-to-exactly-one-table-part-1/"> Database Queries to One Table (Part 1) </a></h5>
+                  <h5> <a data-id="2500" href="#"> Generacion de imagenes con inteligencia artificial </a></h5>
                 </div>
-                <div class="blog-post-content"> This is an excerpt from the Mondial database that is widely...</div>
+                <div class="blog-post-content"> Los generadores de imágenes con IA, o modelos generativos, son sistemas de inteligencia artificial entrenados...</div>
               </div>
             </article>
 
-            <article class="post-article" style="border-top-color:#81D8F7">
+            <!-- <article class="post-article" style="border-top-color:#81D8F7">
               <div class="post-content"> <time class="post-date" style="color:#81D8F7;"> Computer Science</time>
                 <div class="blog-post-title">
                   <h5> <a data-id="2354" href="https://jacekjeznach.com/algorithms-and-data-structures-part-1/"> Algorithms and Data Structures (Part 1) </a></h5>
@@ -324,7 +333,7 @@
                 </div>
                 <div class="blog-post-content"> PostCSS is a very popular tool that allows developers to write...</div>
               </div>
-            </article>
+            </article> -->
         </div>                     
     </section>
 
