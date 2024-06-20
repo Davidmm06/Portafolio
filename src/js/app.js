@@ -75,50 +75,80 @@ function navegacionResponsive() {
   navegacion.classList.toggle('mostar');
 }
 
+/************** Reset scroll proyects **************/
+
+// var contenedores = document.querySelectorAll('.contenedor-proyectos');
+
+// contenedores.forEach(contenedor => {
+//     var scroller = contenedor.querySelector('.scroller');
+
+//     contenedor.addEventListener('mouseout', () => {
+//         scroller.scrollTop = 0;
+//         scroller.scrollIntoView({ behavior: "smooth"});
+//         // console.log('Scrollbar reset to top');
+//     });
+// });
+
+var contenedores = document.querySelectorAll('.contenedor-proyectos');
+contenedores.forEach(contenedor => {
+    var scroller = contenedor.querySelector('.scroller');
+
+    contenedor.addEventListener('mouseout', () => {
+        setTimeout(() => {
+            scroller.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            // console.log('Scrollbar reset to top with smooth scroll');
+        }, 50); // Retardo de 100 milisegundos
+    });
+});
+
+
 /************** SCROLL ANIMATIONS **************/
 
-  function onScrollInit(items, elemTrigger) {
-    var offset = $(window).height() / 1.6;
-    items.each(function() {
-      var elem = $(this),
-        animationClass = elem.attr('data-animation'),
-        animationDelay = elem.attr('data-delay');
+  // function onScrollInit(items, elemTrigger) {
+  //   var offset = $(window).height() / 1.6;
+  //   items.each(function() {
+  //     var elem = $(this),
+  //       animationClass = elem.attr('data-animation'),
+  //       animationDelay = elem.attr('data-delay');
 
-      elem.css({
-        '-webkit-animation-delay': animationDelay,
-        '-moz-animation-delay': animationDelay,
-        'animation-delay': animationDelay
-      });
+  //     elem.css({
+  //       '-webkit-animation-delay': animationDelay,
+  //       '-moz-animation-delay': animationDelay,
+  //       'animation-delay': animationDelay
+  //     });
 
-      var trigger = elemTrigger ? trigger : elem;
+  //     var trigger = elemTrigger ? trigger : elem;
 
-      trigger.waypoint(
-        function() {
-          elem.addClass('animated').addClass(animationClass);
-        },
-        {
-          triggerOnce: true,
-          offset: offset
-        }
-      );
-    });
-  }
+  //     trigger.waypoint(
+  //       function() {
+  //         elem.addClass('animated').addClass(animationClass);
+  //       },
+  //       {
+  //         triggerOnce: true,
+  //         offset: offset
+  //       }
+  //     );
+  //   });
+  // }
 
-  setTimeout(function() {onScrollInit($('.waypoint'));}, 10);
+  // setTimeout(function() {onScrollInit($('.waypoint'));}, 10);
 
 /**************  video en proyectos **************/
 
-  // Obtén la referencia al elemento de video
-  var video = document.getElementById('youtube-video');
+  // // Obtén la referencia al elemento de video
+  // var video = document.getElementById('youtube-video');
 
-  // Define la ID del video de YouTube
-  var videoId = 'bPRBphnmPjA'; // Reemplaza 'ID_DEL_VIDEO' con la ID real del video de YouTube
+  // // Define la ID del video de YouTube
+  // var videoId = 'bPRBphnmPjA'; // Reemplaza 'ID_DEL_VIDEO' con la ID real del video de YouTube
 
-  // Crea la URL del video de YouTube utilizando la ID
-  var videoUrl = 'https://www.youtube.com/embed/' + videoId;
+  // // Crea la URL del video de YouTube utilizando la ID
+  // var videoUrl = 'https://www.youtube.com/embed/' + videoId;
 
-  // Establece la fuente del video en el elemento <video>
-  video.src = videoUrl;
+  // // Establece la fuente del video en el elemento <video>
+  // video.src = videoUrl;
 
 
 /* -----------------------------------------------

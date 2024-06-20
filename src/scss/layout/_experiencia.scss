@@ -1,0 +1,9 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+#experiencia{
+
+    &>h2{
+        @include m.seccion(4.3rem);
+    }
+}

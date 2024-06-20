@@ -1,0 +1,88 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin: auto;
+    // height: 35rem;
+    overflow: hidden;
+    justify-content: center;
+    background-color: coral;
+}
+
+.contenedor-proyectos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    // justify-content: space-evenly;
+    // gap:0;
+    align-items: center;
+    // height: 100vh;
+
+    a{
+        position: relative;
+        height: 30rem;
+        width: 39rem;
+        overflow: hidden;
+        box-shadow: 0 15px 25px rgba(0,0,0,.5);
+
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+            object-fit: cover;
+        }
+
+        .capa{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+
+            h3{
+                font-weight: 400;
+                margin-bottom: 12rem;
+                transition: all 500ms ease-out;
+                margin-top: 2rem;
+            }
+            p{
+                // max-width: 30rem;
+                margin: auto;
+            }
+        }
+        &:hover>.capa{
+            color: v.$blanco;
+            opacity: 1;
+            visibility: visible;
+            // background-color: rgba(34, 0, 255, 0.5);
+
+            h3{
+                margin-top: 7rem;
+                margin-bottom: 1.5rem;
+            }
+        }        
+    }
+}
+
+.color-blanco{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.color-rojo{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.color-amarillo{
+    background-color: rgba(255, 251, 0, 0.5);
+}
+
+.color-negro{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+

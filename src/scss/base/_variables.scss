@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&family=Jura:wght@400;500;700&family=Lobster&family=Press+Start+2P&family=Secular+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap');
+
+// Tipografia
+$fuente_principal: 'jura', sans-serif;
+$fuente_titulo: 'coolvetica';
+$fuente_alterna: 'Poppins', sans-serif;
+// $fuente_subtitulo: ;
+
+@font-face {
+    font-family: 'cafenero';
+    src: url('/Build/fonts/Cafe-Nero-M54.ttf');
+      font-display: auto;
+}
+
+@font-face {
+  font-family: 'coolvetica';
+  src: url('/Build/fonts/coolvetica-rg.ttf');
+    font-display: auto;
+}
+// .cafenero{font-family: 'cafenero' !important;}
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// colores
+$rojo: #F53756;
+$humo: #383838;
+$negro: #000000;
+$carmin: #660202;
+$blanco: #FFFFFF;
+$violeta: purple;
+$colorgeneral: #2500008e;
+
+
+$separacion: 5rem;
+
+// Media Queries
+
+// Fuentes
+
+$delgada: 300;
+$regular : 400;
+$medium: 500;
+$bold: 700;
+$black: 900
+

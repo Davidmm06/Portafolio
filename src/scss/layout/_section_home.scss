@@ -1,0 +1,47 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+@use 'base/animate' as a;
+
+.section-home{
+    h1{
+        -webkit-text-stroke: 0.6px v.$negro;
+        text-shadow: 0.1px 0.1px 0.1px white, 0 0 2em white, 0 0 0.5em white;
+    }
+}
+.marconew{
+    width: 100%;
+    img{
+        object-fit: fill;
+    }
+}
+
+.cont-info{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    @include m.tablet {
+            top: 1rem;
+    }
+}
+
+.redes-sociales{
+    display: flex;
+    max-width: 40rem;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0px;
+    padding: 2rem;
+    border-bottom: 1px solid #d21211; 
+
+    i{
+        font-size: 3rem;
+        transition: color .5s;
+        color: #fff;
+    }
+
+    .fa-envelope:hover, .fa-linkedin:hover, .fa-google-plus:hover, .fa-github:hover{
+        // transform:  rotate(2turn);
+        text-shadow: 0.1px 0.1px 0.1px white, 0 0 2em white, 0 0 0.5em white;
+    }
+}
